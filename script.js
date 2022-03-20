@@ -43,6 +43,20 @@ document.querySelector('#push').onclick = function(){
             }
         }
 
+	    var tasks = document.querySelectorAll(".task2");
+        for(var i=0; i<tasks.length; i++){
+            tasks[i].onclick = function(){
+                this.classList.toggle('completed');
+            }
+        }
+
+	    var tasks = document.querySelectorAll(".task3");
+        for(var i=0; i<tasks.length; i++){
+            tasks[i].onclick = function(){
+                this.classList.toggle('completed');
+            }
+        }
+
         document.querySelector("#newtask1 input").value = "";
 		document.querySelector("#newtask2 input").value = "";
 		document.querySelector("#newtask3 input").value = "";
