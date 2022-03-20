@@ -6,24 +6,19 @@ document.querySelector('#push').onclick = function(){
         document.querySelector('#tasks').innerHTML += `
 
             <div class="task1">
-                <span id="taskname1">
                     ${document.querySelector('#newtask1 input').value}
-                </span>
-
+               
              <div class="task2">
-			     <span id="taskname2">
-				 	${document.querySelector('#newtask2 input').value}
-				 </span>
+			${document.querySelector('#newtask2 input').value}
             </div>
             <div class="task3">
-				<span id="taskname3">
-					${document.querySelector('input[type="date"]').value}
-				</span>
-			</div>
+		${document.querySelector('input[type="date"]').value}
 
-				<button class="delete">
-					<i class="far fa-trash-alt"></i>
-				</button>
+	    </div>
+
+		<button class="delete">
+			<i class="far fa-trash-alt"></i>
+		</button>
             </div>
         `;
 
@@ -43,19 +38,7 @@ document.querySelector('#push').onclick = function(){
             }
         }
 
-	    var tasks = document.querySelectorAll(".task2");
-        for(var i=0; i<tasks.length; i++){
-            tasks[i].onclick = function(){
-                this.classList.toggle('completed');
-            }
-        }
-
-	    var tasks = document.querySelectorAll(".task3");
-        for(var i=0; i<tasks.length; i++){
-            tasks[i].onclick = function(){
-                this.classList.toggle('completed');
-            }
-        }
+	   
 
         document.querySelector("#newtask1 input").value = "";
 		document.querySelector("#newtask2 input").value = "";
