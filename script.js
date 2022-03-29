@@ -7,10 +7,10 @@ document.querySelector('#push').onclick = function(){
         document.querySelector('#tasks').innerHTML += `
         	<div class="task0">
         	<input type=checkbox id="taskstrike">
-           <div class="task1">
+           <div class="task1" onclick="showme()">
 			${document.querySelector('#newtask1 input').value}
 			</div>
-             <div class="task2">
+             <div class="task2" >
 			${document.querySelector('#newtask2 input').value}
             </div>
             <div class="task3">
