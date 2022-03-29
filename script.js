@@ -5,11 +5,11 @@ document.querySelector('#push').onclick = function(){
     }
     else{
         document.querySelector('#tasks').innerHTML += `
-            <div class="task0">
-            <input id="strike" type=checkbox>
+           // <div class="task0">
+            //<input id="strike" type=checkbox>
 			<div class="task1">
 			${document.querySelector('#newtask1 input').value}
-            </div>
+            //</div>
 
              <div class="task2">
 			${document.querySelector('#newtask2 input').value}
@@ -35,7 +35,7 @@ document.querySelector('#push').onclick = function(){
 
         }
 
-        var tasks = document.querySelectorAll("task0");
+        var tasks = document.querySelectorAll("task1");
      //   var tasks = document.getElementById("strike1");
         alert(tasks);
         for(var i=0; i<tasks.length; i++){
