@@ -22,8 +22,7 @@ document.querySelector('#push').onclick = function(){
 		</button>
             </div>
         `;
-        alert(counter);
-        counter++;
+
 	    var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
             current_tasks[i].onclick = function(){
@@ -47,6 +46,7 @@ document.querySelector('#push').onclick = function(){
 		document.querySelector("#newtask3 input").value = "";
 
     }
-	document.getElementById('counter').innerText=counter;
+	document.getElementById('counter').value=counter;
+	alert(counter);
 
 }
