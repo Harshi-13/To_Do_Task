@@ -1,5 +1,5 @@
 document.querySelector('#push').onclick = function(){
-    var counter=document.querySelector('#ctr input').value
+    var counter=document.getElementById('counter').value;
     if(document.querySelector('#newtask1 input').value.length == 0){
         alert("Please Enter a Task")
     }
@@ -14,7 +14,7 @@ document.querySelector('#push').onclick = function(){
             </div>
             <div class="task3">
 		${document.querySelector('input[type="date"]').value}
-		counter++;
+
 	    </div>
 
 		<button class="delete">
@@ -22,8 +22,7 @@ document.querySelector('#push').onclick = function(){
 		</button>
             </div>
         `;
-
-        var current_tasks = document.querySelectorAll(".delete");
+	    var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
             current_tasks[i].onclick = function(){
 				counter--;
@@ -46,6 +45,6 @@ document.querySelector('#push').onclick = function(){
 		document.querySelector("#newtask3 input").value = "";
 
     }
-	document.querySelector('#ctr input').value=counter;
+	document.getElementById('counter').innerText=counter;
 
 }
