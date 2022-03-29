@@ -55,3 +55,17 @@ document.querySelector('#push').onclick = function(){
 
 
 }
+
+
+document.querySelector('#clearall').onclick = function(){
+    var current_tasks = document.getElementById("clearall").value;
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+				counter--;
+                this.parentNode.remove();
+				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
+            }
+
+        }
+
+}
