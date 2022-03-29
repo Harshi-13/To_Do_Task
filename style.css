@@ -263,7 +263,8 @@
     justify-content: space-between;
     border-bottom: 1px solid #d1d3d4;
     cursor: pointer;
-    visibility: none;
+    visibility: hidden;
+    display:none;
 }
 .task2 span{
     font-family: 'Poppins',sans-serif;
@@ -293,7 +294,8 @@
     justify-content: space-between;
     border-bottom: 1px solid #d1d3d4;
     cursor: pointer;
-    visibilty: none;
+    visibilty: hidden;
+    display : none;
 }
 .task3 span{
     font-family: 'Poppins',sans-serif;
