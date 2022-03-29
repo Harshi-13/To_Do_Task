@@ -5,7 +5,7 @@ document.querySelector('#push').onclick = function(){
     }
     else{
         document.querySelector('#tasks').innerHTML += `
-        	<div class="task0>
+        	<div class="task0">
         	<input type=checkbox id="taskstrike">
            <div class="task1">
 			${document.querySelector('#newtask1 input').value}
