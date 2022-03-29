@@ -37,8 +37,8 @@ document.querySelector('#push').onclick = function(){
         for(var i=0; i<tasks.length; i++){
             tasks[i].onclick = function(){
                 this.classList.toggle('completed');
+                document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
             }
-			document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
         }
 
 

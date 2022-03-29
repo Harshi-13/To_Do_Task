@@ -258,3 +258,20 @@
     text-decoration: line-through;
 }
 
+@keyframes fade {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+  }
+  to { 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.dropdown {
+   animation: fade 2s linear forwards;
+}
+
