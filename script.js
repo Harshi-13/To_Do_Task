@@ -67,7 +67,7 @@ document.querySelector('#clearall').onclick = function(){
 
 }
 
-showme(){
+function showme() {
 	document.querySelector(".task2").style.display="block";
 	document.querySelector(".task3").style.display="block";
 }
