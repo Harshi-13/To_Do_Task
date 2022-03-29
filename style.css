@@ -175,12 +175,12 @@
 .task2{
     background-color: #ffffff;
     height: 50px;
-    padding: 5px 10px;
+    padding:  
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #d1d3d4;
+    border-bottom: 1px solid #d1d3d4;
     cursor: pointer;
 }
 .task2 span{
@@ -204,12 +204,12 @@
 .task3{
     background-color: #ffffff;
     height: 50px;
-    padding: 5px 10px;
+    padding:  
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #d1d3d4;
+    border-bottom: 1px solid #d1d3d4;
     cursor: pointer;
 }
 .task3 span{
