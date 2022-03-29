@@ -36,7 +36,7 @@ document.querySelector('#push').onclick = function(){
         }
 
         //var tasks = document.querySelectorAll("task1");
-        var tasks = document.getElementById("strike").checked;
+        var tasks = document.getElementById("strike").value;
         alert(tasks);
         for(var i=0; i<tasks.length; i++){
             tasks[i].onclick = function(){
