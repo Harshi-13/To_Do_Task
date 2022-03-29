@@ -4,6 +4,13 @@ document.querySelector('#push').onclick = function(){
         alert("Please Enter a Task")
     }
     else{
+		<div>
+		Clear All
+		<input type=checkbox id="strikeall">
+		</div>
+		<div> Title</div>
+		<div> Description</div>
+		<div> Date </div>
         document.querySelector('#tasks').innerHTML += `
 
             <div class="strike">
@@ -36,7 +43,7 @@ document.querySelector('#push').onclick = function(){
 
         }
 
-        var tasks = document.querySelectorAll("strike");
+        var tasks = document.querySelectorAll("task1");
         for(var i=0; i<tasks.length; i++){
             tasks[i].onclick = function(){
                 this.classList.toggle('completed');
