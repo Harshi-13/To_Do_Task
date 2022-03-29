@@ -5,11 +5,8 @@ document.querySelector('#push').onclick = function(){
     }
     else{
         document.querySelector('#tasks').innerHTML += `
-           // <div class="task0">
-            //<input id="strike" type=checkbox>
-			<div class="task1">
+           <div class="task1">
 			${document.querySelector('#newtask1 input').value}
-            //</div>
 
              <div class="task2">
 			${document.querySelector('#newtask2 input').value}
