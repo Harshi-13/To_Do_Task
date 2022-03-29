@@ -28,8 +28,9 @@ document.querySelector('#push').onclick = function(){
             current_tasks[i].onclick = function(){
 				counter--;
                 this.parentNode.remove();
-
+				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
             }
+
         }
 
         var tasks = document.querySelectorAll(".task1");
@@ -44,7 +45,7 @@ document.querySelector('#push').onclick = function(){
         document.querySelector("#newtask1 input").value = "";
 		document.querySelector("#newtask2 input").value = "";
 		document.querySelector("#newtask3 input").value = "";
-		document.getElementById('counter').value=document.getElementById('counter').value+1;
+		document.getElementById('counter').value=parseInt(document.getElementById('counter').value)+1;
 	}
 
 
