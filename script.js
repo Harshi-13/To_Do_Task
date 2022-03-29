@@ -1,5 +1,5 @@
 document.querySelector('#push').onclick = function(){
-    counter=document.querySelector('#ctr input').value
+    var counter=document.querySelector('#ctr input').value
     if(document.querySelector('#newtask1 input').value.length == 0){
         alert("Please Enter a Task")
     }
