@@ -44,9 +44,8 @@ document.querySelector('#push').onclick = function(){
         document.querySelector("#newtask1 input").value = "";
 		document.querySelector("#newtask2 input").value = "";
 		document.querySelector("#newtask3 input").value = "";
-		document.getElementById('counter').value=counter;
-		alert("second"+counter);
-    }
+		document.getElementById('counter').value=document.getElementById('counter').value+1;
+	}
 
 
 }
