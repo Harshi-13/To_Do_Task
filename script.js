@@ -6,7 +6,7 @@ document.querySelector('#push').onclick = function(){
     else{
         document.querySelector('#tasks').innerHTML += `
             <div class="strike">
-            <input type=checkbox>
+            <input id="strike1" type=checkbox>
 			<div class="task1">
 			${document.querySelector('#newtask1 input').value}
             </div>
@@ -36,7 +36,7 @@ document.querySelector('#push').onclick = function(){
         }
 
         //var tasks = document.querySelectorAll("task1");
-        var tasks = document.getElementById("strike");
+        var tasks = document.getElementById("strike1");
         alert(tasks);
         for(var i=0; i<tasks.length; i++){
             tasks[i].onclick = function(){
