@@ -4,13 +4,7 @@ document.querySelector('#push').onclick = function(){
         alert("Please Enter a Task")
     }
     else{
-		<div>
-		Clear All
-		<input type=checkbox id="strikeall">
-		</div>
-		<div> Title</div>
-		<div> Description</div>
-		<div> Date </div>
+
         document.querySelector('#tasks').innerHTML += `
 
             <div class="strike">
