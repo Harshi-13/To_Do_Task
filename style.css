@@ -205,10 +205,10 @@
     width: 100%;
     position: relative;
 }
-.task1{
+ .task1{
     background-color: #ffffff;
     height: 50px;
-    padding: 
+    padding: 5px 10px;
     margin-top: 10px;
     display: flex;
     align-items: center;
