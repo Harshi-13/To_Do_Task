@@ -68,6 +68,10 @@ document.querySelector('#clearall').onclick = function(){
 }
 
 function showme() {
+	alert("S");
 	document.querySelector(".task2").style.display="block";
 	document.querySelector(".task3").style.display="block";
+	document.querySelector(".task2").style.visibility="visible";
+	document.querySelector(".task3").style.display="visible";
+
 }
