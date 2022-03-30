@@ -51,7 +51,7 @@ document.querySelector('#push').onclick = function(){
 }
 
 
-document.querySelector('#clearall').onclick = function(){
+/*cument.querySelector('#clearall').onclick = function(){
     var current_tasks = document.getElementById("clearall");
         for(var i=0; i<current_tasks.length; i++){
             current_tasks[i].onclick = function(){
@@ -61,7 +61,7 @@ document.querySelector('#clearall').onclick = function(){
             }
         }
 }
-
+*/
 function showme(){
 // 	alert("S2");
 	var current_tasks1 = document.querySelectorAll(".task1");
@@ -80,4 +80,18 @@ function showme(){
 		current_tasks3[i].style.alignItems="center";
 
 	}
+}
+
+function clearall(){
+		var current_tasks  = document.querySelectorAll(".task0 completed");
+
+//var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+				counter--;
+                this.parentNode.remove();
+				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
+            }
+
+        }
 }
