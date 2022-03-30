@@ -68,17 +68,17 @@ document.querySelector('#clearall').onclick = function(){
 }
 
 document.querySelector('.task1').onclick = function(){ {
-	alert("S");
+	alert("S2");
 	 var current_tasks = document.querySelectorAll(".task1");
         for(var i=0; i<current_tasks.length; i++){
             current_tasks[i].onclick = function(){
 				 	document.querySelector(".task2").style.display="block";
 					document.querySelector(".task2").style.visibility="visible";
-					document.querySelector(".task2").style.align-items="center";
+				//	document.querySelector(".task2").style.alignItems="center";
 
 					document.querySelector(".task3").style.display="block";
 					document.querySelector(".task3").style.visibility="visible";
-					document.querySelector(".task2").style.align-items="center";
+					document.querySelector(".task3").style.alignItems="center";
 
                 }
 
