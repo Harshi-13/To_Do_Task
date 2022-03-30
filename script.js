@@ -83,14 +83,15 @@ function showme(){
 	}
 }
 
-function clearall(){
+document.querySelector('#clearall').onclick = function(){
 		var current_tasks  = document.querySelectorAll(".task0");
 		//alert("clear1");
 //var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
-
-            this.parentNode.remove();
-			document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
+  			current_tasks[i].onclick = function(){
+	  	        this.parentNode.remove();
+				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
+			}
         }
 
 }
