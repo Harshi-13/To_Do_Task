@@ -79,8 +79,6 @@ function showme(){
 					document.querySelector(".task3").style.visibility="visible";
 					document.querySelector(".task3").style.alignItems="center";
 
-                }
-
         }
 
 }
