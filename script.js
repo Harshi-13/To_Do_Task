@@ -38,7 +38,7 @@ document.querySelector('#push').onclick = function(){
          for(var i=1; i<tasks.length; i++){
             tasks[i].onclick = function(){
                 this.classList.toggle('completed');
-                alert(tasks[i].name);
+                //alert(tasks[i].name);
                 if (tasks[i] == ".task0 completed") {
 	                document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
 				}
@@ -84,15 +84,13 @@ function showme(){
 }
 
 function clearall(){
-		var current_tasks  = document.querySelectorAll(".task0 completed");
-		alert("clear");
+		var current_tasks  = document.querySelectorAll(".task0");
+		//alert("clear1");
 //var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
-            current_tasks[i].onclick = function(){
-				counter--;
-                this.parentNode.remove();
-				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
-            }
 
+            this.parentNode.remove();
+			document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
         }
+
 }
