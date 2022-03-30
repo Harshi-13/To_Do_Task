@@ -76,22 +76,22 @@ function showme(){
 		current_tasks2[i].style.visibility="visible";
 		current_tasks2[i].style.alignItems="center";
 
-*		current_tasks3[i].style.display="block";
+		current_tasks3[i].style.display="block";
 		current_tasks3[i].style.visibility="visible";
 		current_tasks3[i].style.alignItems="center";
 
 	}
 }
 
-document.querySelector('#clearall').onclick = function(){
-	 var current_tasks = document.querySelectorAll(".delete");
+function clearall(){
+		var current_tasks  = document.querySelectorAll(".task0");
+		//alert("clear1");
+//var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
-            current_tasks[i].onclick = function(){
-				counter--;
-                this.parentNode.remove();
+  			current_tasks[i].onclick = function(){
+	  	        this.parentNode.remove();
 				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
-            }
-
+			}
         }
 
 }
