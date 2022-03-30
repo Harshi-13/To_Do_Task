@@ -14,7 +14,7 @@
     left: 50%;
     padding: 30px 40px;
 }
-#clear1 {
+.clear1 {
     position: relative;
     background-color: #ffffff;
     padding: 30px 20px;
@@ -22,7 +22,7 @@
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
-#clear1 button{
+.clear1 button{
     position: relative;
     float: right;
     width: 20%;
