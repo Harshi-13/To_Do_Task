@@ -35,8 +35,8 @@ document.querySelector('#push').onclick = function(){
         }
 
         var tasks = document.querySelectorAll(".task0");
-         for(var i=0; i<tasks.length; i++){
-            tasks[0].onclick = function(){
+         for(var i=1; i<tasks.length; i++){
+            tasks[i].onclick = function(){
                 this.classList.toggle('completed');
                 document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
             }
@@ -71,8 +71,10 @@ function showme() {
 	alert("S");
 	document.querySelector(".task2").style.display="block";
 	document.querySelector(".task2").style.visibility="visible";
+	document.querySelector(".task2").style.align-items="center";
 
 	document.querySelector(".task3").style.display="block";
 	document.querySelector(".task3").style.visibility="visible";
+	document.querySelector(".task2").style.align-items="center";
 
 }
