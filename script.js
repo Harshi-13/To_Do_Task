@@ -67,7 +67,7 @@ function showme(){
 	var current_tasks3 = document.querySelectorAll(".task3");
 
 	for(var i=1; i<current_tasks1.length; i++){
-        this.classList.toggle('completed');
+        //this.classList.toggle('completed');
 
 		current_tasks2[i].style.display="block";
 		current_tasks2[i].style.visibility="visible";

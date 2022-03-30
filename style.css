@@ -12,6 +12,7 @@
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
+    padding: 30px 40px;
 }
 .clear1 {
     position: relative;
@@ -60,6 +61,7 @@
 #newtask1{
     position: relative;
     background-color: #ffffff;
+    padding: 5px 5px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
@@ -100,7 +102,7 @@
 #newstrike{
     position: relative;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 5px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
@@ -138,6 +140,7 @@
 #newtask2{
     position: relative;
     background-color: #ffffff;
+    padding: 5px 5px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
@@ -177,6 +180,7 @@
 #newtask3{
     position: relative;
     background-color: #ffffff;
+    padding: 5px 5px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
@@ -219,7 +223,7 @@
     font-family: 'Poppins',sans-serif;
     font-size: 15px;
     background-color: #ffffff;
-    padding: 30px 20px;
+    padding: 5px 5px;
     margin-top: 60px;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0,0,0,0.3);
