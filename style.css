@@ -59,7 +59,8 @@
     border-radius: 5px;
 }
 #newtask1{
-    position: relative;
+    position: absolute;
+    top:20px;
     background-color: #ffffff;
     padding: 30px 20px;
     border-radius: 5px;
