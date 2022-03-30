@@ -67,7 +67,7 @@ document.querySelector('#clearall').onclick = function(){
 
 }
 
-function showme() {
+document.querySelector('.task1').onclick = function(){ {
 	alert("S");
 	 var current_tasks = document.querySelectorAll(".task1");
         for(var i=0; i<current_tasks.length; i++){
