@@ -84,7 +84,7 @@ function showme(){
 }
 
 function clearall(){
-		var current_tasks  = document.querySelectorAll(".task0");
+		var current_tasks  = document.querySelectorAll(".task0 completed");
 		//alert("clear1");
 //var current_tasks = document.querySelectorAll(".delete");
         for(var i=0; i<current_tasks.length; i++){
