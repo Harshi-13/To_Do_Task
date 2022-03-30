@@ -38,7 +38,9 @@ document.querySelector('#push').onclick = function(){
          for(var i=1; i<tasks.length; i++){
             tasks[i].onclick = function(){
                 this.classList.toggle('completed');
-                document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
+                if (tasks[i].name == ".task0 completed") {
+	                document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
+				}
             }
         }
         document.querySelector("#newtask1 input").value = "";
