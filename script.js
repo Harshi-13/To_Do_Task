@@ -36,7 +36,7 @@ document.querySelector('#push').onclick = function(){
 
         var tasks = document.querySelectorAll(".task0");
          for(var i=0; i<tasks.length; i++){
-            tasks[i].onclick = function(){
+            tasks[0].onclick = function(){
                 this.classList.toggle('completed');
                 document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
             }
@@ -70,8 +70,9 @@ document.querySelector('#clearall').onclick = function(){
 function showme() {
 	alert("S");
 	document.querySelector(".task2").style.display="block";
-	document.querySelector(".task3").style.display="block";
 	document.querySelector(".task2").style.visibility="visible";
-	document.querySelector(".task3").style.display="visible";
+
+	document.querySelector(".task3").style.display="block";
+	document.querySelector(".task3").style.visibility="visible";
 
 }
