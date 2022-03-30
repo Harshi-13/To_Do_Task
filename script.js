@@ -69,15 +69,18 @@ document.querySelector('#clearall').onclick = function(){
 
 function showme(){
 	alert("S2");
-	 var current_tasks = document.querySelectorAll(".task1");
-        for(var i=0; i<current_tasks.length; i++){
-				 	document.querySelector[i](".task2").style.display="block";
-					document.querySelector[i](".task2").style.visibility="visible";
-					document.querySelector[i](".task2").style.alignItems="center";
+	 var current_tasks1 = document.querySelectorAll(".task1");
+var current_tasks2 = document.querySelectorAll(".task2");
+var current_tasks3 = document.querySelectorAll(".task3");
 
-					document.querySelector(".task3").style.display="block";
-					document.querySelector(".task3").style.visibility="visible";
-					document.querySelector(".task3").style.alignItems="center";
+        for(var i=1; i<current_tasks1.length; i++){
+				 	current_tasks2[i].style.display="block";
+					current_tasks2[i].style.visibility="visible";
+					current_tasks2[i].style.alignItems="center";
+
+					current_tasks3[i].style.display="block";
+					current_tasks3[i].style.visibility="visible";
+					current_tasks3[i].style.alignItems="center";
 
         }
 
