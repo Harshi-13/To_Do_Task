@@ -41,16 +41,11 @@ document.querySelector('#push').onclick = function(){
                 document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
             }
         }
-
-
-
         document.querySelector("#newtask1 input").value = "";
 		document.querySelector("#newtask2 input").value = "";
 		document.querySelector("#newtask3 input").value = "";
 		document.getElementById('counter').value=parseInt(document.getElementById('counter').value)+1;
 	}
-
-
 }
 
 
@@ -62,26 +57,25 @@ document.querySelector('#clearall').onclick = function(){
                 this.parentNode.remove();
 				document.getElementById('counter').value=parseInt(document.getElementById('counter').value)-1;
             }
-
         }
-
 }
 
 function showme(){
-	alert("S2");
-	 var current_tasks1 = document.querySelectorAll(".task1");
-var current_tasks2 = document.querySelectorAll(".task2");
-var current_tasks3 = document.querySelectorAll(".task3");
+// 	alert("S2");
+	var current_tasks1 = document.querySelectorAll(".task1");
+	var current_tasks2 = document.querySelectorAll(".task2");
+	var current_tasks3 = document.querySelectorAll(".task3");
 
-        for(var i=1; i<current_tasks1.length; i++){
-				 	current_tasks2[i].style.display="block";
-					current_tasks2[i].style.visibility="visible";
-					current_tasks2[i].style.alignItems="center";
+	for(var i=1; i<current_tasks1.length; i++){
+        this.classList.toggle('completed');
 
-					current_tasks3[i].style.display="block";
-					current_tasks3[i].style.visibility="visible";
-					current_tasks3[i].style.alignItems="center";
+		current_tasks2[i].style.display="block";
+		current_tasks2[i].style.visibility="visible";
+		current_tasks2[i].style.alignItems="center";
 
-        }
+		current_tasks3[i].style.display="block";
+		current_tasks3[i].style.visibility="visible";
+		current_tasks3[i].style.alignItems="center";
 
+	}
 }
